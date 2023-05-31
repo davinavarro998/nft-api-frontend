@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>NFTicket</title>
+  </head>
+  <body>
+    <header class="headerContainer">
+      <h1>Create Ticket Sale</h1>
+      <a class="anchor" href="./index.html">Buy tickets</a>
+    </header>
+    <main class="mainContainer">
+      <div class="avaiableTicketsBox">
+        <form class="createTicketSaleForm" id="createTicketSaleForm">
+          <input
+            id="standardTicketCreationInput"
+            type="number"
+            class="inputField"
+            placeholder="Standard"
+            min="1"
+            required
+          />
+          <input
+            id="deluxeTicketCreationInput"
+            type="number"
+            class="inputField"
+            placeholder="Deluxe"
+            min="1"
+            required
+          />
+          <input
+            id="goldenTicketCreationInput"
+            type="number"
+            class="inputField"
+            placeholder="Golden"
+            min="1"
+            required
+          />
+          <input type="submit" value="mintNfts" class="submitBtn" id="mintNftBtn"  />
+        </form>
+      </div>
+    </main>
+    <script src="./create-ticket-sale.js"></script>
+  </body>
+</html>

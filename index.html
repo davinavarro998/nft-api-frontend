@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NFTicket</title>
+  </head>
+  <body>
+    <header class="headerContainer">
+      <h1>Buy Tickets</h1>
+      <a class="anchor" href="./create-ticket-sale.html">Create ticket sale</a>
+    </header>
+    <main class="mainContainer">
+      <div class="avaiableTicketsBox">
+        <div>
+          <input
+            style="width: 100%;max-width: 600px;"
+            type="text"
+            class="inputField"
+            placeholder="paste your public address here!"
+            id="pastedAddressInput"
+          />
+        </div>
+        <div class="ticketCard">
+          <form id="standardTicketForm">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/015/117/381/original/ticket-icon-in-white-colors-voucher-signs-illustration-png.png"
+              alt="standardTicket image"
+            />
+            <label for="standardTicketInput">Standard ticket</label>
+            <input
+              class="inputField"
+              id="standardTicketInput"
+              type="number"
+              placeholder="amount"
+              min="1"
+            />
+            <input
+              id="standardTicketBtn"
+              class="submitBtn"
+              type="submit"
+              value="Buy"
+            />
+          </form>
+        </div>
+        <div class="ticketCard">
+          <form id="deluxeTicketForm">
+            <img
+              src="https://thumbs.dreamstime.com/z/blue-ticket-isolated-white-background-78484969.jpg"
+              alt="deluxeTicket image"
+            />
+            <label for="deluxeTicketInput">Deluxe ticket</label>
+            <input
+              class="inputField"
+              id="deluxeTicketInput"
+              type="number"
+              placeholder="amount"
+              min="1"
+            />
+            <input
+              id="deluxeTicketBtn"
+              class="submitBtn"
+              type="submit"
+              value="Buy"
+            />
+          </form>
+        </div>
+        <div class="ticketCard">
+          <form id="goldenTicketForm">
+            <img
+              src="https://t3.ftcdn.net/jpg/04/34/51/02/360_F_434510236_D92NNTzI3VsYTXfsr3naTS4mrKAqDSzG.jpg"
+              alt="goldenTicket image"
+            />
+            <label for="goldenTicketInput">Golden ticket</label>
+            <input
+              class="inputField"
+              id="goldenTicketInput"
+              type="number"
+              placeholder="amount"
+              min="1"
+            />
+            <input
+              id="goldenTicketBtn"
+              class="submitBtn"
+              type="submit"
+              value="Buy"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
