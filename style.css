@@ -21,9 +21,19 @@ body {
   font-size: 45px;
   
 }
+.anchorSpace{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 .anchor{
   text-decoration: none;
   color: #f0f8ff;
+  
 }
 .anchor:hover{
   text-decoration: none;
@@ -84,6 +94,11 @@ body {
     flex-direction: column;
   }
 } */
+@media screen and (max-width:410px) {
+  .ticketCard form {
+    flex-direction: column;
+  }
+}
 .createTicketSaleForm{
   display: flex;
   
