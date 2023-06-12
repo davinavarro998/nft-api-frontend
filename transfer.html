@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="headerContainer">
+      <h1>Transfer your tickets</h1>
+      <div class="anchorSpace"></div>
+      <a class="anchor" href="./index.html">Buy Tickets</a>
+    </header>
+    <main class="mainContainer">
+      <div class="avaiableTicketsBox">
+        <form class="createTicketSaleForm" id="transferTicketsForm">
+          <input
+            id="Ifrom"
+            type="text"
+            class="inputField"
+            placeholder="From"
+            
+            required
+          />
+          <input
+            id="Ito"
+            type="text"
+            class="inputField"
+            placeholder="To"
+            min="1"
+            required
+          />
+          <input
+            id="Iid"
+            type="number"
+            class="inputField"
+            placeholder="id"
+            min="1"
+            required
+          />
+          <input
+            class="inputField"
+            placeholder="Amount"
+            type="number"
+            min="1"
+            name="Iamount"
+            id="Iamount"
+          />
+          <input type="submit" class="submitBtn" name="" id="transferBtn" value="Transfer" />
+        </form>
+      </div>
+    </main>
+    <script src="./transfer.js"></script>
+  </body>
+</html>
